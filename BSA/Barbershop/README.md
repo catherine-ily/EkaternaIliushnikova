@@ -21,13 +21,13 @@
 
 | Папка | Файл(ы) | Краткое описание |
 |:---|:---|:---|
-| BPMN | `BSA06_BBS_bpmn_FBC`, `BSA06_BBS_bpmn_PAY`, `BSA06_BBS_bpmn_REC`, `BSA06_BBS_bpmn_REM`, `BSA06_BBS_bpmn_VWR` <br> <br> `BSA06_BBS_FBC_disc`, `BSA06_BBS_PAY_disc`, `BSA06_BBS_REC_disc`, `BSA06_BBS_REM_disc`, `BSA06_BBS_VWR_disc` <br> <br>  `BSA06_BBS_mpr_1` `BSA06_BBS_mpr_2` <br> <br> `BSA06_BBS_rev` `BSA06_BBS_vision`  | DFD (диаграмма потоков данных), swimlane (межфункциональная диаграмма), диаграмма состояний, таблицы решений |
-| DatabasesAndDataDictionary | `BSA04_BBS_crud` <br> <br> `BSA04_BBS_entity` <br> <br> `BSA09_class_diagram_1`, `BSA09_class_diagram_2` <br> <br> `BSA09_clients_empoyees_entities`, `BSA09_discount_notification_entities`, `BSA09_persona_entity`, `BSA09_referense_entities`, `BSA09_service_slot_entity` | BPMN-модели бизнес-процессов, сравнение с ранее созданными DFD/swimlane, устранение нестыковок |
-|DataFlow| `BSA02_BBS_asis`, `BSA02_BBS_context`, `BSA02_BBS_streams`, `BSA02_BBS_tobe` | Описание|
-| Diagrams | `BSA05_BBS_adswd` <br> <br> `BSA05_BBS_dfd` <br> <br> `BSA05_BBS_dst` <br> <br> `BSA05_BBS_swd` <br> <br> `BSA05_BBS_tst` | Пользовательские истории с критериями приёмки и тестовыми сценариями |
-|Stakeholders| `BSA01_BBS_needs`, `BSA01_BBS_stakeholders` | Описание |
-| UseCase | `BSA08_BBS_UC01_flows`, `BSA08_BBS_UC02_flows`, `BSA08_BBS_UC03_flows` <br> <br> `BSA08_BBS_UC01_preconditions`, `BSA08_BBS_UC02_preconditions` , `BSA08_BBS_UC03_preconditions` | Сценарии использования, диаграммы акторов и вариантов использования |
-|UserStory| `BSA07_BBS_us`, `BSA07_BBS_us_client`, `BSA07_BBS_us_manager`, `BSA07_BBS_us_master` | Описание|
-| - | `BSA06_BBS_glossary` | Словарь терминов, используемых в проекте |
+| BPMN | `BSA06_BBS_bpmn_FBC`, `BSA06_BBS_bpmn_PAY`, `BSA06_BBS_bpmn_REC`, `BSA06_BBS_bpmn_REM`, `BSA06_BBS_bpmn_VWR` <br> <br> `BSA06_BBS_FBC_disc`, `BSA06_BBS_PAY_disc`, `BSA06_BBS_REC_disc`, `BSA06_BBS_REM_disc`, `BSA06_BBS_VWR_disc` <br> <br>  `BSA06_BBS_mpr_1` `BSA06_BBS_mpr_2` <br> <br> `BSA06_BBS_rev` `BSA06_BBS_vision`  | BPMN-модели бизнес-процессов <br> <br> Обсуждение выделенных бизнес-процессов.  <br> <br> Выделение основных бизнес-процессов: вариант до и после обсуждения каждого из них. <br> <br> Сравнение с ранее созданными DFD/swimlane, устранение нестыковок  |
+| DatabasesAndDataDictionary | `BSA04_BBS_crud` <br> <br> `BSA04_BBS_entity` <br> <br> `BSA09_class_diagram_1`, `BSA09_class_diagram_2` <br> <br> `BSA09_clients_empoyees_entities`, `BSA09_discount_notification_entities`, `BSA09_persona_entity`, `BSA09_referense_entities`, `BSA09_service_slot_entity` | Права на создание, чтение, обновление и удаление каждой выделенной сущности. <br> <br> Список сущностей с их атрибутами. <br> <br> Диаграммы классов, построенные на уточненных справочниках сущностей. <br> <br> Справочники сущностей. |
+|DataFlow| `BSA02_BBS_asis`, `BSA02_BBS_context`, `BSA02_BBS_streams`, `BSA02_BBS_tobe` | Нынешнее состояние системы, контекстная диаграмма, выделение потоков данных, состояние системы, к которому мы стремимся. |
+| Diagrams | `BSA05_BBS_adswd` <br> <br> `BSA05_BBS_dfd` <br> <br> `BSA05_BBS_dst` <br> <br> `BSA05_BBS_swd` <br> <br> `BSA05_BBS_tst` | Adswd - дополненная диаграмма "плавательные дорожки" <br> <br> Dfd - диаграмма потоков данных. <br> <br> Dst - диаграмма состояний объекта. <br> <br> Swd - диаграмма "плавательные дорожки". <br> <br> Tst - таблица состояний объекта. |
+|Stakeholders| `BSA01_BBS_needs`, `BSA01_BBS_stakeholders` | Выделение списка заинтересованных лиц и их потребностей. |
+| UseCase | `BSA08_BBS_UC01_flows`, `BSA08_BBS_UC02_flows`, `BSA08_BBS_UC03_flows` <br> <br> `BSA08_BBS_UC01_preconditions`, `BSA08_BBS_UC02_preconditions` , `BSA08_BBS_UC03_preconditions` | Выделение сценариев использования для нескольких ролей. Для каждого сценария использования предусмотрены отдельные файлы для описания предусловий и основного и альтернативного потоков. |
+|UserStory| `BSA07_BBS_us`, `BSA07_BBS_us_client`, `BSA07_BBS_us_manager`, `BSA07_BBS_us_master` | Пользовательские истории с критериями приёмки и тестовыми сценариями.|
+| - | `BSA06_BBS_glossary` | Словарь терминов, используемых в проекте. |
 
 ---
