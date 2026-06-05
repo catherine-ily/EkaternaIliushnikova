@@ -5,6 +5,9 @@
 -- либо, в случае отсутствия такового, ближайший к дате транзакции курс валюты 
 -- из будущего.
 
+insert into currency values (100, 'EUR', 0.85, '2022-01-01 13:29');
+insert into currency values (100, 'EUR', 0.79, '2022-01-08 13:29');
+
 WITH currency_clear AS (
 	SELECT c.name AS currency_name,
 			COALESCE(
