@@ -77,5 +77,5 @@ clean:
 
 clang:
 	cp ../materials/linters/.clang-format .clang-format
-	clang-format -i *.c
+	clang-format -n *.c
 	rm -f .clang-format

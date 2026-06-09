@@ -37,10 +37,6 @@ s21_string.a:
 	ar rcs s21_string.a s21_*.o
 	ranlib s21_string.a
 
-clang:
-	clang-format -n *.c tests/*.c 
-	clang-format -n *.h tests/*.h
-
 valgrind: 
 	valgrind --log-file=log.txt --trace-children=yes --track-fds=yes --track-origins=yes --leak-check=full --show-leak-kinds=all -s ./unit_test
 	grep errors log.txt -n
@@ -67,3 +63,8 @@ clean: clean_lib clean_lib clean_test clean_obj
 	rm -rf log.txt
 
 rebuild: clean all
+
+clang:
+	cp ../materials/linters/.clang-format .clang-format
+	clang-format -n *.c
+	rm -f .clang-format
