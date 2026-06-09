@@ -66,3 +66,5 @@ rm -f pattern.txt empty_string.txt space.txt test1.txt test2.txt test3.txt test4
 echo "ALL: $cnt"
 echo "SUCCESS: $cnt_success"
 echo "FAILED: $cnt_failed"
+
+rm -f *.txt
