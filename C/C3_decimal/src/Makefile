@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror -std=c11
-TEST_FLAGS = -lcheck -lm -lpthread
+TEST_FLAGS = -lcheck -lm -lpthread -lsubunit
 GCOV_FLAGS = -fprofile-arcs -ftest-coverage
 
 SRC_DIR = .
@@ -62,7 +62,7 @@ gcov_report: $(GCOV_EXEC)
 	     --exclude "include/*" \
 	     --exclude "*/include/*" \
 	     --exclude "/usr/include/*" \
-	     --ignore-errors unused
+	     
 	genhtml $(BUILD_DIR)/coverage.info \
 	        --output-directory $(GCOV_REPORT) \
 	        --title "Coverage Report" \
